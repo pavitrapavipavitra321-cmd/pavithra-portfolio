@@ -118,7 +118,7 @@ with col1:
         unsafe_allow_html=True
     )
 
-    st.image("images/profile.jpg", width=180)
+    st.image("images/profile.png", width=180)
 
 with col2:
     st.markdown(

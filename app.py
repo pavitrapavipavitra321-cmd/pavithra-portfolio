@@ -96,7 +96,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-
 # --------------------------------------------------
 # HEADER WITH PROFILE PHOTO
 # --------------------------------------------------
@@ -109,16 +108,18 @@ with col1:
         <style>
         div[data-testid="stImage"] img {
             border-radius: 50%;
-            width: 180px;
-            height: 180px;
+            width: 240px;
+            height: 240px;
             object-fit: cover;
+            object-position: center;
+            image-rendering: auto;
         }
         </style>
         """,
         unsafe_allow_html=True
     )
 
-    st.image("images/profile.png", width=180)
+    st.image("images/profile.jpg", width=240)
 
 with col2:
     st.markdown(
@@ -149,6 +150,12 @@ with col2:
 
 
 st.divider()
+
+
+
+
+      
+
 
 # --------------------------------------------------
 # ABOUT ME
